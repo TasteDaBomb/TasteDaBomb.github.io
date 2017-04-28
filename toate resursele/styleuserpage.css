@@ -1,0 +1,206 @@
+body{background:url(top_mountains_lake_wood_water_ripples_42475_3840x2400.jpg);background-size: 100% 100%;}
+#tot
+{
+	width: 1450px;
+	height: 450px;
+	margin: auto;
+	margin-top: 50px;
+	z-index: -1;
+    display: block;
+}
+#container
+{
+	margin-left: 50px;
+	float: left;
+	background-color: rgba(250,250,250,0.7);
+	width: 450px;
+	height: 450px;
+	cursor: pointer;
+	font-family: Cursive;
+	font-size: 80px;
+	text-align: center;
+}
+#container1
+{
+	float:left;
+	background-color: rgba(250,250,250,0.7);
+	width: 450px;
+	height: 450px;
+	cursor: pointer;
+	font-family: Cursive;
+	font-size: 80px;
+	text-align: center;
+
+}
+#navig1{
+    display: none;
+    width: 1500px;
+    height: 850px;
+    background-color: rgba(250,250,250,0.5);
+    margin: auto;
+}
+#navig3{
+    display: none;
+    width: 1500px;
+    height: 800px;
+    background-color: rgba(250,250,250,0.5);
+    margin: auto;
+}
+#feedback
+{
+	margin-left: 250px;
+	margin-top: 50px;
+	font-size: 60px;
+}
+#navigation3
+{
+transform: rotate(180deg);
+border: 3px solid white;
+background-color: white;
+color: red;
+width: 60px;
+height: 45px;
+position: relative;
+float: right;
+font-size: 35px;
+text-align: center;
+cursor: pointer;
+background-color: none;
+}
+#navigation1
+{
+transform: rotate(180deg);
+color: red;
+width: 60px;
+height: 45px;
+position: relative;
+float: right;
+font-size: 35px;
+text-align: center;
+cursor: pointer;
+border: 3px solid white;
+background-color: white;
+}
+#navigation1:hover{
+    background-color: red;
+    color: white;
+}
+#navigation3:hover{
+    background-color: red;
+    color: white;
+}
+#files
+{
+	margin-left: 50%;
+    transform: translateX(-75%);
+	margin-top: 0px;	
+}
+table, th, td {
+    border: 2px solid blue;
+	border-spacing: 0px;
+}
+i{position:relative;top: 30%;transform: translateY(-100%);}
+#part1{text-align: center; font-size: 60px; margin: auto; margin-top: 8%; color: blue;}
+#part2{margin-left: 550px;}
+#header{width: 200px; height: 50px; background-color: #e59c4e; position: afixed; margin-top: 0px; margin-left: -20px;transition: 0.3s; color:black; font-size: 40px;}
+#header:hover{width: 1100px;opacity: 0.7;}
+#textarena{margin-left: 5px; width: 80%; height: 70%; border: 2px solid lightgreen;}
+#tablerow{width: 250px; height: 200px; background-color: rgba(204,255,0,0.26); font-size: 20px;}
+#table{font-family: Cursive; font-size: 90px; text-align: center;}
+a{text-decoration: none; color: black;}
+@media (max-width: 1667px)
+{
+	body{
+		zoom: 85%;
+	}
+}
+@media screen and (max-width:1667px) and (max-height:901px)
+{
+	body{
+		zoom: 80%;
+	}
+}
+@media (max-width: 1567px)
+{
+	body{
+		zoom: 80%;
+	}
+}
+@media (max-width: 1467px)
+{
+	body{
+		zoom: 75%;
+	}
+}
+@media screen and (max-width: 1367px)
+{
+	body{
+		zoom: 70%;
+	}
+}
+@media screen and (max-width: 1280px) and (max-height:1024px)
+{
+    body{
+		zoom: 90%;
+	}
+    #container{
+        zoom: 80%;
+    }
+    #container1{
+        zoom: 80%;
+    }
+    #navig1{
+        zoom: 80%;
+    }
+    #navig3{
+        zoom: 80%;
+    }
+}
+@media screen and (max-width: 1280px)
+{
+	body{
+		zoom: 55%;
+	}
+    #container{
+        zoom: 80%;
+    }
+    #container1{
+        zoom: 80%;
+    }
+    #navig1{
+        zoom: 80%;
+    }
+    #navig3{
+        zoom: 80%;
+    }
+}
+@media (max-width: 1167px)
+{
+	body{
+		zoom: 65%;
+	}
+}
+@media (max-width: 1067px)
+{
+	body{
+		zoom: 57%;
+	}
+}
+@media (max-width: 967px)
+{
+	body{
+		zoom: 55%;
+	}
+}
+@media (max-width: 867px)
+{
+	body{
+		zoom: 50%;
+	}
+}
+@media (max-width: 767px)
+{
+	body{
+		zoom: 45%;
+	}
+}

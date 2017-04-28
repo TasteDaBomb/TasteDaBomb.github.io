@@ -1,0 +1,112 @@
+#btn
+{color: white; font-family: Cursive; font-size: 30px; text-align: center; margin-top: -7px; margin-left: 40px; cursor: pointer; background-color: transparent; border: 0px;}
+#create
+{
+background-color: rgba(0,0,0,0.5);
+margin-left:auto;
+margin-right: auto;
+width: 40%;
+height: 100%;
+top: 50%;
+transform: translateY(-50%);
+position:relative;
+}
+#position{
+	width:100%;
+	height: 80%;
+	position:fixed;
+}
+#align{
+	top: 50%;
+	transform: translateY(-50%);
+	position:relative;
+	margin: auto;
+	width: 90%;
+	height: 90%;
+	color: white;
+}
+h1
+{
+	font-family: Cursive;
+	font-size: 60px;
+	margin-left: 70px;
+}
+p
+{
+	font-family: Cursive;
+	font-size: 20px;
+	margin-left: 50px;
+}
+#login
+{
+	color:white;
+	background-color: rgba(0,0,0,0.5);
+	width: 200px;
+	height: 300px;
+	float: right;
+	position: relative;
+	margin-top:-240px;
+	transition: 0.3s;
+}
+#creaza{margin-left: 50%;transform: translateX(-50%); width: 30%; height: 80px; border: 2px solid #4169E1;}
+#camp{margin-left: 50px; width: 85%; height: 30px; border: 2px solid #4169E1;}
+@media (max-width: 1667px)
+{
+	#position{
+		zoom: 90%;
+	}
+}
+@media (max-width: 1567px)
+{
+	#position{
+		zoom: 85%;
+	}
+}
+@media (max-width: 1467px)
+{
+	#position{
+		zoom: 80%;
+	}
+}
+@media (max-width: 1367px)
+{
+	#position{
+		zoom: 75%;
+	}
+}
+@media (max-width: 1267px)
+{
+	#position{
+		zoom: 70%;
+	}
+}
+@media (max-width: 1167px)
+{
+	#position{
+		zoom: 65%;
+	}
+}
+@media (max-width: 1067px)
+{
+	#position{
+		zoom: 60%;
+	}
+}
+@media (max-width: 967px)
+{
+	#position{
+		zoom: 55%;
+	}
+}
+@media (max-width: 867px)
+{
+	#position{
+		zoom: 50%;
+	}
+}
+@media (max-width: 767px)
+{
+	#position{
+		zoom: 45%;
+	}
+}

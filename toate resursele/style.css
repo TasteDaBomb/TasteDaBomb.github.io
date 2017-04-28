@@ -1,0 +1,234 @@
+body{
+	overflow: none;
+	font-family: Calibri, sans-serif;
+}
+.toate {
+position: fixed;
+margin-top: 25%;
+width: 100%;
+}
+#vid{
+	z-index: -1;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	overflow: none;
+	top: 0;
+	left: 0;
+	position: fixed;
+}
+#align{
+	margin: auto;
+	width: 1050px;
+}
+a
+{
+	text-decoration: none;
+}
+.scris {
+background-color: rgba(2520,250,250,0.5);
+width: 300px;
+height: 37px;
+float: left;
+margin-left: 50px;
+transition: 0.3s;
+color: black;
+font-size: 30px;
+overflow: hidden;
+text-align: center;
+}
+.scris img{
+width: 300px;
+}
+.scris:hover {
+box-shadow: 0 10px 50px black;
+cursor: pointer;
+}
+.titlu {
+position:fixed;
+margin: auto;
+text-align: center;
+font-size: 100px;
+color: #ffffff;
+text-shadow: 0 0 30px red;
+width: 100%;
+height: 75px;
+margin-top: 8%;
+}
+#controls{
+	position: fixed;
+	width: 50px;
+	margin-left: 10px;
+	height: 50px;
+	margin-top: 10px;
+}
+#showed{
+	background: url(menu_00000.png);
+	background-size: 100% 100%;
+	border: 1px solid white;
+	cursor: pointer;
+	width: 100%;
+	height: 50px;
+	border-radius: 500px;
+	background-color: rgba(0,0,0,0.1);
+	transform-origin: center;
+	transition: 0.3s;
+	text-align:center;
+}
+#playstop{
+	background: url(pause.ico);
+	background-size: 60% 60%;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	cursor: pointer;
+	margin-left: 5px;
+	transform-origin: center;
+	display: none;
+	margin-top: 10;
+	animation: showeded 0.5s;
+	width: 100%;
+	height: 50px;
+	transform-origin: center center;
+	border-radius: 500px;
+	background-color: rgba(250,250,250,0.7);
+}
+#muted{
+	background: url(muted.png);
+	background-size: 60% 60%;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	cursor: pointer;
+	margin-left: 5px;
+	display: none;
+	margin-top: 10;
+	transform-origin: center center;
+	width: 100%;
+	animation: showeded 0.6s;
+	height: 50px;
+	border-radius: 500px;
+	background-color: rgba(250,250,250,0.7);
+}
+#facebook
+{
+	float: left;
+	background: url(fb-art.png);
+    background-size: 100% 100%;
+	width: 50px; height:50px;
+}
+#mail
+{
+	float: left;
+	margin-left: 20px;
+	background: url(Martz90-Circle-Yahoo.png);
+    background-size: 100% 100%;
+	width: 50px; height:50px;
+}
+#copyright
+{
+	width: 500px;
+	height: 250px;
+	background-color: white;
+	border: 2px solid blue;
+	border-radius-right: 50px;
+	text-align:center;
+	font-size: 25px;
+	color: blue;
+	margin-left: -1160px;
+	transition: 0.3s;
+}
+#controls:hover{
+	height: 230px;
+}
+#muted:hover{
+	box-shadow: 0 0px 50px rgba(0, 0, 0, 0.5);
+}
+#playstop:hover{
+	box-shadow: 0 0px 50px rgba(0, 0, 0, 0.5);
+}
+#controls:hover #showed{
+	width: 60px;
+	height: 60px;
+	box-shadow: 0 0px 50px rgba(0, 0, 0, 0.5);
+}
+#controls:hover #playstop{
+	display: block;
+}
+#controls:hover #muted{
+	display: block;
+}
+@-webkit-keyframes showeded{
+	from{
+		opacity: 0;
+		margin-top: -10px;
+		transform: scale(0) rotate(0deg);
+		}
+	70%{
+		transform: scale(1.2);
+	}
+	to{
+		opacity: 1;
+		margin-top: 10px;
+		transform: scale(1) rotate(-180deg);
+		}
+}
+@media (max-width: 1667px)
+{
+	body{
+		zoom: 90%;
+	}
+}
+@media (max-width: 1567px)
+{
+	body{
+		zoom: 85%;
+	}
+}
+@media (max-width: 1467px)
+{
+	body{
+		zoom: 80%;
+	}
+}
+@media (max-width: 1367px)
+{
+	body{
+		zoom: 75%;
+	}
+}
+@media (max-width: 1267px)
+{
+	body{
+		zoom: 70%;
+	}
+}
+@media (max-width: 1167px)
+{
+	body{
+		zoom: 65%;
+	}
+}
+@media (max-width: 1067px)
+{
+	body{
+		zoom: 57%;
+	}
+}
+@media (max-width: 967px)
+{
+	body{
+		zoom: 55%;
+	}
+}
+@media (max-width: 867px)
+{
+	body{
+		zoom: 50%;
+	}
+}
+@media (max-width: 767px)
+{
+	body{
+		zoom: 45%;
+	}
+}
