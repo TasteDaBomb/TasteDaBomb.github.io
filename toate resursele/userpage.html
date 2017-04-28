@@ -1,0 +1,96 @@
+<?php
+session_start();
+?>
+<!doctype html>
+<html>
+<head>
+<link href="styleuserpage.css" rel="stylesheet">
+<meta name="viewport" content="width = device-width, initial-scale= 1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Pagina Mea</title>
+<meta name="viewport" content="width=device-width, initial-scale= 1.0">
+<script>
+function visible1(){
+	document.getElementById("navig1").style.display="block";
+	document.getElementById("null").style.display = "none";
+}
+function up1(){
+	document.getElementById("navig1").style.display = "none";
+	document.getElementById("null").style.display = "block";
+}
+function visible3(){
+	document.getElementById("navig3").style.display="block";
+	document.getElementById("null").style.display = "none";
+}
+function up3(){
+	document.getElementById("navig3").style.display = "none";
+	document.getElementById("null").style.display = "block";
+}
+</script>
+</head>
+<body id="bg" oncontextmenu="return false">
+	<a href="username.php">
+		<div id="header">
+		<div style="margin-left: 50px; float: right;">Log out</div>
+		</div>
+	</a>
+	<div id="null">
+<div id="part1">
+	<i>"Profesorul ar trebui să irige deşerturile, <br><div id="part 2">nu să taie pădurile!"</div></i>
+</div>
+<div id="tot">
+	<div id="container1" onclick="visible1()">
+		<i>Portofoliu profesor</i>
+	</div>
+	<a href="upload.html">
+		<div id="container" onclick="visible3()">
+			<i>Posteaza</i>
+		</div>
+	</a>
+	<div id="container" onclick="visible3()">
+		<i>Feedback</i>
+	</div>
+</div>
+</div>
+<div id="navig1">
+	<button id="navigation1" onclick="up1()">
+	<div style="margin-top: -2px;">X</div>
+	</button>
+	<div id="files">
+	<table id="table">
+  <tr>
+    <td>Transformarea<br>Izocora</td>
+    <td><a href="Transformarea Izocora.pptx" download="Tr izocora"><button id="tablerow">Descarcă Power Point</button></a></td>
+	<td><a href="america.swf" download="Revolitia Americana"><button id="tablerow">Descarcă Aplicaţie</button></a></td>
+  </tr>
+  <tr>
+    <td>Transformarea<br>Izobara</td>
+    <td><a href="Transformarea Izobara.pptx" download="Tr izocora"><button id="tablerow">Descarcă Power Point</button></a></td>
+	<td><a href="anglia.swf" download="Revolutia Engleza"><button id="tablerow">Descarcă Aplicaţie</button></a></td>
+  </tr>
+    <tr>
+    <td>Transformarea<br>Izoterma</td>
+    <td><a href="Transformarea Izoterma.pptx" download="Tr izoterma"><button id="tablerow">Descarcă Power Point</button></a></td>
+	<td><a href="franta.swf" download="Revolutia Franceza"><button id="tablerow">Descarcă Aplicaţie</button></a></td>
+  </tr>
+</table>
+	</div>
+</div>
+<div id="navig3">
+	<button id="navigation3" onclick="up3()">
+	<div style="margin-top: -2px;">X</div>
+	</button>
+<div id="feedback">
+	Feedback:
+	<form method="POST" action="MAILTO:draguturares@yahoo.com">
+		<textarea rows="40" id="textarena" placeholder="Aici va scrieti parerile sau impresiile despre site si le veti trimite direct creatorilor acestor platforme">
+		</textarea>
+		<br>
+	<button>
+	Trimite!
+	</button>
+	</form>
+</div>
+</div>
+</body>
+</html>

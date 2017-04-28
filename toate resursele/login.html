@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Creaza-ti un cont!</title>
+<link href="manual.png" rel = "icon">
+<link rel="stylesheet" href="stylelogin.css">
+<meta name="viewport" content="width=device-width, initial-scale= 1.0">
+</head>
+<style>
+</style>
+<script>
+window.addEventListener("load", incepe);
+
+function move()
+{
+var move = document.getElementById("login");
+
+if (move.style.marginTop == "-240px")
+		move.style.marginTop = "-50px";
+	else
+		move.style.marginTop = "-240px";
+}		
+function incepe()
+{
+	audio = new Audio();
+	audio.src = "fundalmusic.mp3";
+	audio.loop = true;
+	audio.play();
+}
+</script>
+<body oncontextmenu="return false" style="background: url(bglogin.jpg); background-size: 100%; background-repeat: no-repeat;">
+<div id="position">
+	<div id="create">
+		<div id="align">
+		<h1>Creaza-ti un cont!</h1></br>
+		<form method="POST" action="register.php"></br>
+		<div style="margin-top: -70px;"><p>Nume de utilizator:</p></div></br>
+		<input type="text" name="username" placeholder="Nume Utilizator" id="camp" required /></br>
+		<p>Adresa de mail:</p></br>
+		<input type="text" name="mail" placeholder="Adresa de mail" id="camp" required /></br>
+		<p>Parola:</p></br>
+		<input type="password" name="password" placeholder="Parola" id="camp" required/></br>
+		<p>Confirmarea Parolei:</p></br>
+		<input type="password" name="confirmpassword" placeholder="Repeta parola" id="camp" required/></br>
+		<br>
+		<input type="submit" name="submit" value="Creaza!" id="creaza" />
+		</form>
+		</div>
+	</div>
+</div>
+	<div id="login">
+		<form action="login.php" method="POST" style="margin-top: 25px"></br></br></br>
+		<div style=" font-family: Times New Roman; margin-left: 10px;" required >Adrasa de mail</div>
+		<input type="text" name="mail" style="margin-left: 5px; width: 185px; height: 20px; border: 2px solid #4169E1;"/></br><br>
+		<div style=" font-family: Times New Roman; margin-left: 10px;" required>Parola</div>
+		<input type="password" name="password" style="margin-left: 5px; width: 185px; height: 20px; border: 2px solid #4169E1;"/></br><br>
+		<input type="submit" name="submit" value="Login!"style="margin-left: 30px; border: 2px solid #4169E1;"/></br></br>
+		</form>
+	<button id="btn" style="" onclick="move()"><b>LOGIN</b></button>
+	</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Marile Revolutii din secolele XVII-XVIII</title>
+<link href="icon.jpg" rel = "icon">
+<link href="animate.css" rel = "stylesheet">
+<link href="styleindex.css" rel = "stylesheet">
+<meta name="viewport" content="width = device-width, initial-scale= 1.0">
+<script>
+function playPause(playstop,vid) {
+var vid = document.getElementById(vid);
+if (vid.paused)
+{
+	vid.play();
+	document.getElementById('playstop').style.backgroundImage = "url('pause.ico')";
+}
+else 
+{
+	vid.pause();
+	document.getElementById('playstop').style.backgroundImage = "url('play.png')";
+}
+}
+function mute(muted,vid)
+{
+var vid = document.getElementById(vid);
+if(vid.muted)
+	{
+		vid.muted = false;
+		document.getElementById('muted').style.backgroundImage = "url('muted.png')";
+	}
+	else
+	{
+		vid.muted = true;
+		document.getElementById('muted').style.backgroundImage = "url('unmuted.png')";
+	}
+}
+</script>
+<body oncontextmenu="return false">
+<div id="tot">
+	<div id="controls">
+		<div id="showed">
+		</div>
+		<div id="playstop" onclick="playPause('playstop','vid')">
+		</div>
+		<div id="muted" onclick="mute('muted','vid')">
+		</div>
+		<a href="../painpage.html">
+			<div id="back">
+				&#8592;
+			</div>
+		</a>
+	</div>
+</div>
+</div>
+<div class="titlu">
+TESTE TERMODINAMICA
+</div>
+<div class="toate">
+<div id="align">
+	<a href="trizobara.html" class="button" >
+		<div class="scris animated fadeIn">
+		Transformarea Izobara
+		</div>
+	</a>
+	<a href="trizocora.html" class="button">
+		<div class="scris animated fadeIn">
+		Transformarea Izocora
+		</div>
+	</a>
+	<a href="trizoterma.html" class="button">
+		<div class="scris animated fadeIn">
+		Transofrmarea Izoterma
+		</div>
+	</a>
+	<a href="motoare.html" class="button">
+		<div class="scris animated fadeIn">
+		Motorul Carrnot
+		</div>
+	</a>
+	<a href="harta.html" class="button">
+		<div class="scris2 animated fadeIn">
+		ORGANIZATOR GRAFIC - GAZUL IDEAL
+		</div>
+	</a>
+</div>
+</div>
+<video src="film fundal index.mp4" id="vid" autoplay="true" loop="loop"/>
+</body>
+</html>
