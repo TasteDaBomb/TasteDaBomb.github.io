@@ -1,0 +1,77 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Marile Revolutii din secolele XVII-XVIII</title>
+<link href="icon.jpg" rel = "icon">
+<link href="toate resursele/style.css" rel = "stylesheet">
+<meta name="viewport" content="width = device-width, initial-scale= 1.0">
+<script>
+function playPause(playstop,vid) {
+var vid = document.getElementById(vid);
+if (vid.paused)
+{
+	vid.play();
+	document.getElementById('playstop').style.backgroundImage = "url('toate resursele/pause.ico')";
+}
+else 
+{
+	vid.pause();
+	document.getElementById('playstop').style.backgroundImage = "url('toate resursele/play.png')";
+}
+}
+function mute(muted,vid)
+{
+var vid = document.getElementById(vid);
+if(vid.muted)
+	{
+		vid.muted = false;
+		document.getElementById('muted').style.backgroundImage = "url('muted.png')";
+	}
+	else
+	{
+		vid.muted = true;
+		document.getElementById('muted').style.backgroundImage = "url('unmuted.png')";
+	}
+}
+</script>
+<body oncontextmenu="return false">
+<div id="tot">
+	<div id="controls">
+		<div id="showed">
+		</div>
+		<div id="playstop" onclick="playPause('playstop','vid')">
+		</div>
+		<div id="muted" onclick="mute('muted','vid')">
+		</div>
+	</div>
+</div>
+</div>
+<div class="titlu">
+PAGINA INTERACTIVA WEB<br>
+- ELEMENTE DE TERMODINAMICA -
+</div>
+
+<div class="toate">
+<div id="align">
+	<a href="index.html" class="button" style="-webkit-text-stroke: 1px black;">
+		<div class="scris animated fadeIn">
+		Elevi &#x2192;
+		<img src="elevi.jpg" />
+		</div>
+	</a>
+	<a href="postari.html" class="button" style="-webkit-text-stroke: 1px black;">
+		<div class="scris animated fadeIn">
+		Postari &#x2192;
+		<img src="profesor.jpg" />
+		</div>
+	</a>
+	<a href="login.html" class="button" style="-webkit-text-stroke: 1px black;">
+		<div class="scris animated fadeIn">
+		Profesori &#x2192;
+		<img src="profesor.jpg" />
+		</div>
+	</a>
+</div>
+</div>
+<video src="toate resursele/film fundal index.mp4" id="vid" autoplay="true" loop="loop"/>
+</body>
+</html>
